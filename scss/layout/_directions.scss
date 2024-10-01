@@ -1,0 +1,55 @@
+.directions {
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
+    color: #282b22;
+    margin-top: 100px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+  }
+
+  &__card {
+    margin-top: 50px;
+  }
+
+  &__card__number {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: left;
+    color: #282b22;
+  }
+
+  &__card__text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: left;
+    color: #3D4A39;
+    margin-top: 20px;
+  }
+
+  &__card__img{
+    margin-top: 15px;
+  }
+}
+
+
+@include mobile-large {
+    .directions__wrapper{
+      grid-template-columns: repeat(2,2fr );
+      gap: 40px;
+    }
+}
+
+@include tablet {
+ .directions__wrapper{
+      grid-template-columns: repeat(3,1fr );
+      gap: 30px;
+    }
+}
